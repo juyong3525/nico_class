@@ -1,0 +1,16 @@
+.main.chats .friend__content {
+  margin-left: 15px;
+}
+.main.chats .chats__chat.friend.friend--lg {
+  display: flex;
+  justify-content: space-between;
+}
+.main.chats .friends__list {
+  display: flex;
+  align-items: flex-end;
+}
+
+.friend__content.clock {
+  font-size: 15px;
+  opacity: 0.7;
+}

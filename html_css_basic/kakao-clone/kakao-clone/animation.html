@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation Practice</title>
+        <meta name="author" content="용용퐁">
+        <meta charset="utf-8">
+        <style>
+            body{
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box{
+                height: 15px;
+                width: 15px;
+                margin-left: 15px;
+                background-color: yellowgreen;
+                animation: 1.5s RotateRec infinite ease-in-out;
+            }
+            .box:nth-child(2){
+                animation-delay: .2s;
+            }
+            .box:nth-child(3){
+                animation-delay: .4s;
+            }
+            @keyframes RotateRec {
+                0%{
+                    transform: none;
+                }
+                50%{
+                    transform: rotate(0.5turn)
+                }
+                100%{
+                    transform: rotate(0.5turn)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </body>
+</html>

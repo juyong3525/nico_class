@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat | Kakao Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- This is header -->
+    <div class="chat header-plus-main">
+      <header class="chat header">
+        <div class="header__header-column">
+          <a href="index.html">
+            <span class="header__icon">
+              <i class="fas fa-arrow-left"></i>
+            </span>
+          </a>
+          <span class="header__title">GoodMan</span>
+        </div>
+      </header>
+      <!-- This is Main -->
+      <main class="chat chat-screen">
+        <ul class="chat__messages">
+          <span class="chat__timestamp">Today</span>
+          <li class="incoming-message message">
+            <img
+              src="images/goodman.png"
+              class="m-avatar message__avatar"
+              width="60px"
+              height="60px"
+            />
+            <div class="message__content">
+              <span class="message__bubble">
+                Heyyy
+              </span>
+              <span class="message__author">GoodMan</span>
+            </div>
+          </li>
+          <li class="sent-message message">
+            <div class="message__content">
+              <span class="message__bubble">
+                ??
+              </span>
+            </div>
+          </li>
+          <li class="incoming-message message">
+            <img
+              src="images/goodman.png"
+              class="m-avatar message__avatar"
+              width="60px"
+              height="60px"
+            />
+            <div class="message__content">
+              <span class="message__bubble">
+                Lend me some money. plz
+              </span>
+              <span class="message__author">GoodMan</span>
+            </div>
+          </li>
+          <li class="incoming-message message">
+            <img
+              src="images/goodman.png"
+              class="m-avatar message__avatar"
+              width="60px"
+              height="60px"
+            />
+            <div class="message__content">
+              <span class="message__bubble">
+                Hello????
+              </span>
+              <span class="message__author">GoodMan</span>
+            </div>
+          </li>
+        </ul>
+      </main>
+      <div class="chat__write--container">
+        <input
+          type="text"
+          class="chat__write"
+          placeholder="Send message"
+          class="chat__write-input"
+        />
+        <div class="chat__icon-left chat__icon">
+          <i class="far fa-plus-square"></i>
+        </div>
+        <div class="chat__icon-right chat__icon">
+          <span class="chat__write-icon">
+            <i class="far fa-smile-wink"></i>
+          </span>
+          <span class="chat__write-icon">
+            <i class="fas fa-microphone"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bigscreen">
+      <span class="bigscreen__text">
+        Please make your screen small!!😅😅
+      </span>
+    </div>
+  </body>
+</html>

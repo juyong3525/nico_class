@@ -1,0 +1,40 @@
+.main.more .friend__column:nth-child(2) {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.friend__more-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.friend__more-icon:nth-child(1) {
+  padding-right: 30px;
+  border-right: 1px solid #eeeeee;
+}
+.friend__more-icon:nth-child(1) i {
+  margin-right: 15px;
+}
+.friend__more-icon:nth-child(2) .friend__more-title {
+  margin-left: 15px;
+}
+.more__btn:nth-child(1) {
+  margin-top: 0;
+}
+.more__btn {
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.more__btn i {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.more__btn-title {
+  cursor: pointer;
+}

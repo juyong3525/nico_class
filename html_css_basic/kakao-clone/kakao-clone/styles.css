@@ -1,0 +1,18 @@
+b{
+    font-size: 70px;
+    text-decoration: underline;
+}
+h1 {
+    color:green;
+    font-size: 40px;
+/* property-name: value; */
+}
+div{
+    color:red;
+    font-size: 20px;
+}
+
+a:link {text-decoration: none; color: blue;}
+a:visited {text-decoration: none; color: orange;}
+a:active {text-decoration: none; color: grey;}
+a:hover {text-decoration: underline; color: magenta;}

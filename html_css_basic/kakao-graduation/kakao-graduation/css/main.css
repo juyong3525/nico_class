@@ -1,0 +1,23 @@
+.header-plus-main .main {
+  margin-top: 100px;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 20px;
+  border-bottom-right-radius: 10px;
+}
+.friends__write {
+  display: flex;
+  background-color: #f7f7f7;
+  bottom: 50px;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}

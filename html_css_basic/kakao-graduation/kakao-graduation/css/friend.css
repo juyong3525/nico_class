@@ -1,0 +1,115 @@
+.friend .friend__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 38%;
+}
+.friend__avatar.g-avatar {
+  width: 70px;
+  height: 70px;
+}
+.friend__avatar.m-avatar {
+  width: 60px;
+  height: 60px;
+}
+.friend__my-profile {
+  margin-top: 10px;
+  padding-left: 10px;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.friends__write-column:nth-child(2) {
+  width: 100%;
+}
+.friends__write-column input {
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 4px 0;
+  border: none;
+  margin-left: 10px;
+}
+.friends__write-column input:focus {
+  outline: none;
+}
+.friends__birthday .friends__title {
+  margin-left: 10px;
+  padding: 15px 0;
+  font-size: 15px;
+  opacity: 0.5;
+}
+.friends__birthday {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #c2d0ea;
+}
+
+.friends__list .friends__friend.friend {
+  margin-top: 15px;
+}
+.friends__friend.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend__column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.friend__name {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+.friend__status {
+  opacity: 0.5;
+}
+.friend--lg {
+  width: 100%;
+  background-color: white;
+  height: 70%;
+}
+.friends__list {
+  margin-top: 10px;
+}
+.friends__list .friend__column,
+.birthdays__list .friend__column {
+  padding: 10px;
+}
+.birthdays__title,
+.friends__title {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  opacity: 0.5;
+  font-size: 15px;
+  padding-top: 40px;
+}
+.more__header .friends__friend.friend.friend--lg,
+.friends__friend .friends__friend.friend.friend--lg {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  cursor: pointer;
+}
+.birthdays__list .friends__friend.friend.friend--lg,
+.friends__list .friends__friend.friend.friend--lg {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  cursor: pointer;
+}
+@keyframes friendsTitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.birthdays__title,
+.friend__my-profile,
+.friends__title,
+.friends__write-icon {
+  animation: friendsTitle 1s ease-in forwards;
+}

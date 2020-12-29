@@ -1,0 +1,25 @@
+.header-plus-main .header {
+  background-color: #c2d0ea;
+  padding: 20px 40px 30px 20px;
+  border-bottom: #f7f7f7;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 10px;
+  position: fixed;
+  z-index: 1;
+}
+.header .header__header-column:nth-child(1) {
+  font-size: 20px;
+}
+.header__header-column .header__title {
+  font-weight: 600;
+}
+.header__header-column .header__title-number {
+  opacity: 0.6;
+}
+.header .header__header-column i {
+  font-size: 30px;
+  cursor: pointer;
+}
