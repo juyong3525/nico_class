@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <style>
+      .slider__item {
+        width: 1420px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        opacity: 0;
+        transform: scaleX(0.9);
+        transition: all 0.5s ease-in-out;
+      }
+      .showing {
+        z-index: 1;
+        opacity: 1;
+        transform: none;
+      }
+      .slider__item:nth-child(odd) {
+        background-color: skyblue;
+      }
+      .slider__item:nth-child(even) {
+        background-color: pink;
+      }
+      .direction {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        width: 1420px;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+      }
+      .direction i {
+        cursor: pointer;
+      }
+      .direction__left {
+        margin-left: 10px;
+      }
+      .direction__right {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="slider__item"><h1>1</h1></div>
+      <div class="slider__item"><h1>2</h1></div>
+      <div class="slider__item"><h1>3</h1></div>
+      <div class="slider__item"><h1>4</h1></div>
+      <div class="slider__item"><h1>5</h1></div>
+      <div class="slider__item"><h1>6</h1></div>
+    </div>
+    <div class="direction">
+      <div class="direction__left">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div class="direction__right">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+    <script>
+      const SHOWING_CLASS = "showing";
+      const firstSlide = document.querySelector(".slider__item:first-child");
+      const lastSlide = document.querySelector(".slider__item:last-child");
+      const rightDir = document.querySelector(".direction__right i");
+      const leftDir = document.querySelector(".direction__left i");
+
+      function slide() {
+        const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+        if (currentSlide) {
+          currentSlide.classList.remove(SHOWING_CLASS);
+          const NextSlide = currentSlide.nextElementSibling;
+          if (NextSlide) {
+            NextSlide.classList.add(SHOWING_CLASS);
+          } else {
+            firstSlide.classList.add(SHOWING_CLASS);
+          }
+        } else {
+          firstSlide.classList.add(SHOWING_CLASS);
+        }
+      }
+      function backSlide() {
+        const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+        if (currentSlide) {
+          currentSlide.classList.remove(SHOWING_CLASS);
+          const beforeSlide = currentSlide.previousElementSibling;
+          if (beforeSlide) {
+            beforeSlide.classList.add(SHOWING_CLASS);
+          } else {
+            lastSlide.classList.add(SHOWING_CLASS);
+          }
+        } else {
+          firstSlide.classList.add(SHOWING_CLASS);
+        }
+      }
+      function init() {
+        slide();
+        rightDir.addEventListener("click", slide);
+        leftDir.addEventListener("click", backSlide);
+      }
+      init();
+    </script>
+  </body>
+</html>
