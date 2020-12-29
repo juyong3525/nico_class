@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    height: 1500px;
+    padding-top: 100px;
+    margin: 0;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #ff7879;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.box{
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+.bluebox{
+display: inline-block;
+background-color: #7ed6df;
+width: 70%;
+}
+.bluebox h1{
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.yellowbox{
+    display: inline-block;
+    background-color: #ffcc02;
+    height: 100%;
+    width: 28%;
+    border: 5px solid gray;
+    position: relative;
+}
+.greenbox{
+    background-color: #bbdc58;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: -25px;
+    left: -50px;
+    z-index: 2;
+}

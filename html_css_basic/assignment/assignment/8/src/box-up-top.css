@@ -1,0 +1,10 @@
+.box__up .box__up__top {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://i2.wp.com/kenyanwallstreet.com/wp-content/uploads/2019/08/flower.jpg?fit=750%2C500&ssl=1");
+  flex-wrap: wrap-reverse;
+  cursor: pointer;
+}

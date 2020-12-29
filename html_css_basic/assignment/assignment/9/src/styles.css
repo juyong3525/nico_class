@@ -1,0 +1,133 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap";
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+  padding-top: 30px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.header .header__title {
+  font-weight: 600;
+  font-size: 25px;
+}
+.main {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+input:focus {
+  outline: none;
+}
+.main .main__input-info {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 35px;
+  border-radius: 8px;
+  border: 2px solid #f8f8f8;
+}
+.main .main__find-pwd {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #e3273d;
+}
+.main .main__find-pwd-text {
+  cursor: pointer;
+}
+.main__checkbox {
+  margin-bottom: 50px;
+  opacity: 0.6;
+  font-size: 15px;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.main__checkbox {
+  position: relative;
+}
+.main__checkbox input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.main__checkbox input[type="checkbox"] + label:before {
+  cursor: pointer;
+  margin: -2px 8px 0 0;
+  color: #e3273d;
+  content: "\f0c8";
+  font-family: "Font Awesome 5 Free";
+}
+.main__checkbox input[type="checkbox"]:checked + label:before {
+  content: "\f14a";
+}
+
+button:focus {
+  outline: none;
+}
+.main .sign-in__button {
+  cursor: pointer;
+  margin-bottom: 35px;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: #e3273d;
+  color: white;
+}
+.sign-in__button:active {
+  background-color: #ef3b50;
+}
+.main .main__or {
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.main .main__btn__sign-in__sns {
+  display: flex;
+  justify-content: space-between;
+}
+.main .sign-in__sns {
+  margin-bottom: 40px;
+  cursor: pointer;
+  width: 45%;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+}
+.main .sign-in__sns.f {
+  background-color: #485a95;
+}
+.sign-in__sns.f:active {
+  background-color: #5a6eaa;
+}
+.main .sign-in__sns.t {
+  background-color: #5da1f2;
+}
+.sign-in__sns.t:active {
+  background-color: #75b0f4;
+}
+.main .main__help {
+  margin-bottom: 15px;
+}
+.main .main__help.left {
+  opacity: 0.6;
+}
+.main .main__help.right {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #e3273d;
+}

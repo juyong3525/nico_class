@@ -1,0 +1,21 @@
+.box__down .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 20px;
+  cursor: pointer;
+}
+.box__down .product-info__price {
+  font-weight: 600;
+  font-size: 20px;
+  color: #393a3e;
+}
+.box__down .product-info__star {
+  color: #febd51;
+  margin-left: 100px;
+}
+.box__down .product-info__review-number {
+  font-size: 15px;
+  color: #aaafb4;
+  margin-left: 10px;
+}

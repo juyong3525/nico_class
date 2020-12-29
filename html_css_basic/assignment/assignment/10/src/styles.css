@@ -1,0 +1,14 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap";
+@import "reset.css";
+@import "phone-header.css";
+@import "phone-main.css";
+@import "phone-nav.css";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+  padding: 25px 15px;
+  background-color: #e3e4e9;
+}

@@ -1,0 +1,9 @@
+.box__up .box__up__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  border: 1px solid #fefefe;
+  margin-bottom: -40px;
+  z-index: 1;
+  cursor: pointer;
+}

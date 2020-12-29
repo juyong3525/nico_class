@@ -1,0 +1,63 @@
+.phone__header {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 10%,
+      rgba(255, 255, 255, 0.2) 25%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url("https://www.vets4pets.com/siteassets/species/cat/close-up-of-cat-looking-up.jpg?w=585&scale=down");
+  background-size: cover;
+  /* background-size: 500px 360px; */
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: 1px -1px rgba(0, 0, 0, 0.329);
+}
+.phone__header .header__tiny-photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+.phone__header .phone__status-bar {
+  padding: 20px 30px 0px 30px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.phone__header .phone__header__icon {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  cursor: pointer;
+}
+.phone__header .phone__header__tiny-photo {
+  margin-top: 200px;
+  display: flex;
+}
+.phone__header__tiny-photo .tiny-photo,
+.phone__header__tiny-photo .header__tiny-box {
+  cursor: pointer;
+}
+.phone__header .header__tiny-box {
+  width: 50px;
+  height: 50px;
+  background-color: #4067ff;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.phone__header .phone__header__tiny-photo {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+.phone__header .header__tiny-photo {
+  margin-right: 20px;
+}
