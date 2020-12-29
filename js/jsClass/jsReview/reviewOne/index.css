@@ -1,0 +1,12 @@
+body {
+  background-color: #ecf0f1;
+}
+h1 {
+  color: #34495e;
+}
+.clicked {
+  color: rgb(127, 140, 141);
+}
+.btn {
+  cursor: pointer;
+}

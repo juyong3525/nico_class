@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="form">
+        <table>
+          <tr>
+            <td colspan="4">
+              <div class="outputContainer">
+                <input
+                  type="text"
+                  class="same-output checkpoint"
+                  id="checkpoint"
+                  value=""
+                  size="20"
+                  readonly
+                />
+                <input
+                  type="text"
+                  class="same-output output"
+                  id="output"
+                  value=""
+                  size="20"
+                  readonly
+                />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><button type="button" id="%" class="btn btnMod btn-oper">%</button></td>
+            <td><button type="button" id="btnC" class="btn">C</button></td>
+            <td><button type="button" id="btnBack" class="btn">←</button></td>
+            <td><button type="button" id="+" class="btn btnAdd btn-oper">+</button></td>
+          </tr>
+
+          <tr>
+            <td><button type="button" id="1" class="btn btn-num">1</button></td>
+            <td><button type="button" id="2" class="btn btn-num">2</button></td>
+            <td><button type="button" id="3" class="btn btn-num">3</button></td>
+            <td><button type="button" id="-" class="btn btnMin btn-oper">-</button></td>
+          </tr>
+
+          <tr>
+            <td><button type="button" id="4" class="btn btn-num">4</button></td>
+            <td><button type="button" id="5" class="btn btn-num">5</button></td>
+            <td><button type="button" id="6" class="btn btn-num">6</button></td>
+            <td><button type="button" id="*" class="btn btnMul btn-oper">*</button></td>
+          </tr>
+
+          <tr>
+            <td><button type="button" id="7" class="btn btn-num">7</button></td>
+            <td><button type="button" id="8" class="btn btn-num">8</button></td>
+            <td><button type="button" id="9" class="btn btn-num">9</button></td>
+            <td><button type="button" id="/" class="btn btnDiv btn-oper">/</button></td>
+          </tr>
+
+          <tr>
+            <td><button type="button" id="00" class="btn btn-zero js-btn00">00</button></td>
+            <td><button type="button" id="0" class="btn btn-zero js-btn0">0</button></td>
+            <td><button type="button" id="btnDot" class="btn">.</button></td>
+            <td><button type="button" id="btnEql" class="btn btn-eql">=</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

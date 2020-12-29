@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #b2fefa, #0ed2f7);
+  display: flex;
+  z-index: -1;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+body .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.form {
+  background: linear-gradient(to bottom right, #404040, #0c0c0c);
+  width: 60vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-radius: 25px;
+}
+
+.outputContainer {
+  width: 50vh;
+  height: 12vh;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.same-output {
+  width: 100%;
+  border: none;
+  background: #a1bd66;
+}
+.same-output:focus {
+  outline: none;
+}
+
+.checkpoint {
+  height: 4vh;
+  width: 100%;
+  font-size: 30px;
+}
+.output {
+  height: 8vh;
+  width: 100%;
+  font-size: 50px;
+  text-align: end;
+}
+
+button {
+  width: 12vh;
+  height: 12vh;
+  color: white;
+  background-color: grey;
+  margin: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  font-size: 20px;
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+.btn-num {
+  background-color: #5d5d5f;
+}
+
+.btn-eql {
+  background-color: #f55530;
+}

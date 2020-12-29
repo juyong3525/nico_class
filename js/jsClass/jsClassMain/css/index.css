@@ -1,0 +1,181 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;900&display=swap";
+@import "reset.css";
+
+body {
+  background-color: #636e72;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.body__div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+}
+.clock h1 {
+  font-size: 200px;
+  font-weight: 900;
+}
+.clicked {
+  color: rgb(127, 140, 141);
+}
+.btn {
+  cursor: pointer;
+}
+.form,
+.greetings {
+  display: none;
+}
+.form {
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.greetings_div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.greetings_div .greetings {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.greetings_div .greetings_btn {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.greetings_div .greetings_btn:active,
+.greetings_div .greetings_btn:active + .greetings {
+  transform: scale(0.98);
+  opacity: 0.5;
+}
+
+.form input {
+  background-color: #ecf0f1;
+  border: none;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0 15px;
+  transition: transform 0.3s ease-in-out;
+}
+input:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+
+.showing {
+  display: flex;
+}
+
+.toDoForm {
+  opacity: 0.7;
+  margin-top: 20px;
+}
+.toDoForm input {
+  border-radius: 10px;
+  padding: 0 15px;
+  width: 400px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.toDoList li {
+  font-size: 30px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.toDoList li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.toDoList li button:focus {
+  outline: none;
+}
+.toDoList li button:active,
+.toDoList li button:active + span {
+  opacity: 0.3;
+  transform: scale(0.98);
+}
+
+.toDoList li span {
+  font-weight: 600;
+}
+.weather {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+}
+
+.blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: filter 0.3s ease-in-out;
+}
+.blurOn {
+  animation: blur 0.3s ease-in-out forwards;
+}
+@keyframes blur {
+  from {
+    filter: none;
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+.blurOff {
+  animation: blurOff 0.2s ease-in-out forwards;
+}
+@keyframes blurOff {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: none;
+  }
+}
